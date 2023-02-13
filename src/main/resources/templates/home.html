@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org"> <!--//타임리프 쓰기-->
+<head th:replace="fragments/header :: header">
+    <title>Chan's Shop</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div class="container">
+
+    <div th:replace="fragments/bodyHeader :: bodyHeader" />
+    <!--프레그먼트의 바디헤더를 찾아가는것-->
+    <div class="jumbotron">
+        <div class="col-lg-6 col-sm-12 text-lg-start text-center">
+
+        <p><a class="btn btn-primary btn-outline-white" href="/members/new">회원 가입</a></p>
+
+        </div>
+    </div>
+    <div th:replace="fragments/footer :: footer" />
+</div> <!-- /container -->
+</body>
+</html>
